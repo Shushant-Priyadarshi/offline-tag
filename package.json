@@ -1,0 +1,23 @@
+{
+  "name": "offline-tag",
+  "version": "1.0.0",
+  "description": "offline tags to provide better UX",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shushant",
+  "git repository":"https://github.com/Shushant-Priyadarshi/offline-tag",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7"
+  }
+}
