@@ -1,6 +1,6 @@
 {
   "name": "offline-tag",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "offline tags to provide better UX",
   "main": "dist/index.js",
   "scripts": {
