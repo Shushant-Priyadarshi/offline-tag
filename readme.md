@@ -14,7 +14,7 @@ npm install offline-tag
 
 ```
 import React from 'react';
-import { Offline } from 'check-internet-con';
+import { Offline } from 'offline-tag';
 
 function App() {
   return (
