@@ -12,23 +12,17 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 var useConnection = function useConnection() {
-  var _useState = (0, _react.useState)(window.navigator.onLine),
+  var _useState = (0, _react.useState)(true),
     _useState2 = _slicedToArray(_useState, 2),
     status = _useState2[0],
     setStatus = _useState2[1];
   (0, _react.useEffect)(function () {
-    var handleOnline = function handleOnline() {
-      return setStatus(true);
-    };
-    var handleOffline = function handleOffline() {
-      return setStatus(false);
-    };
-    window.addEventListener("online", handleOnline);
-    window.addEventListener("offline", handleOffline);
-    return function () {
-      window.removeEventListener("online", handleOnline);
-      window.removeEventListener("offline", handleOffline);
-    };
+    window.addEventListener("online", function () {
+      setStatus(true);
+    });
+    window.addEventListener("offline", function () {
+      setStatus(false);
+    });
   }, []);
   return status;
 };
