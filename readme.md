@@ -1,6 +1,7 @@
 # `offline-tag`
 
-`offline-tag` is a React component that helps you easily display a message when the user is offline. It leverages the `offline` event listener to detect online and offline status.
+`offline-tag` is a React component that helps you easily display a message when the user is offline. It leverages the `offline` event 
+listener to detect online and offline status.
 
 ## Installation
 
@@ -29,5 +30,3 @@ export default App;
 
 ```
 ![Screenshot 2024-07-21 191920](https://github.com/user-attachments/assets/38e6c4fa-b82c-464d-9ca6-84664ba39718)
-
-
